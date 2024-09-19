@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         if (!edadTexto.isEmpty()) {
             try {
                 int edad = Integer.parseInt(edadTexto);
-                int edadHumana = edad * 15;  // Puedes ajustar este cálculo si lo necesitas
+                int edadHumana = edad * 7;  // Puedes ajustar este cálculo si lo necesitas
                 textViewResultado.setText("La edad en años humanos es: " + edadHumana);
             } catch (NumberFormatException e) {
                 Toast.makeText(MainActivity.this, "Por favor ingresa un número válido", Toast.LENGTH_SHORT).show();
